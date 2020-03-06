@@ -13,7 +13,7 @@ input.add {
   }
 
   button{
-    background-color:grey;
+    background-color:white;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
@@ -22,5 +22,11 @@ input.add {
     font-family: Arial;
   }
   button:hover{
-    background-color:  slateblue;
+    
+    background-color:  rgb(66, 133, 244);
+    color: white;
+  }
+  .sign:hover{
+  
+   
   }

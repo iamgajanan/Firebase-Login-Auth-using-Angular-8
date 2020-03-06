@@ -1,6 +1,6 @@
 <div class="tp" >
     <h2 > New Login</h2> 
-    <form  id="newData" name="newData" #addData="ngForm" [(ngModel)]="adData" (ngSubmit)="onSubmit(addData.value)" ngDefaultControl>
+    <!-- <form  id="newData" name="newData" #addData="ngForm" [(ngModel)]="adData" (ngSubmit)="onSubmit(addData.value)" ngDefaultControl>
      
       <div > Name: </div>   
       <input name="name" type="text" ngModel  required #name="ngModel"/><br><br>
@@ -8,13 +8,13 @@
       <input name="email" type="email"  ngModel required #email="ngModel"/><br><br>
   
       <input class="add" type="submit"  value="Sign In" >&nbsp;
-    </form>
+    </form> -->
   </div>
   
-  <p>Or&nbsp;</p>
+  <!-- <p>Or&nbsp;</p> -->
   
   <button type="button" class="google-button" (click)='login()' *ngIf='visible' >
-    
-    <span class="google-button__text">Sign in with Google</span>
+    <img src="../../assets/download.png" height="25px" width="25px">&nbsp;&nbsp;&nbsp;
+  <span class="sign">Sign in with Google</span>
   </button>
   

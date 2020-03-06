@@ -1,6 +1,7 @@
 
-<div *ngIf="!valuesa">
-    <h2>  Welcome User </h2>
+
+    <!-- <h2>  Welcome User </h2> -->
+    <!-- <div *ngIf="!valuesa"></div>
     <ul *ngFor="let data of datas">
       
         
@@ -10,14 +11,14 @@
        
       
     </ul>
-  </div>
+  </div> -->
   
   
   <div *ngIf="afAuth.authState | async as authUser">
     <h1>
       Hello!! {{authUser.displayName}}
     </h1>
-    <img [src]="authUser.photoURL">
+    <img [src]="authUser.photoURL" height="400px" width="400px">
     <h1>
       Email: {{authUser.email}}
     </h1>
@@ -25,7 +26,7 @@
       Thanks for login...!!!
     </h1>
   <br>
-        <button href="#" class="btn btn-info btn-lg" (click)='logout()'>
+        <button href="#" class="btn btn-info btn-lg" class="del" (click)='logout()'>
         <span class="glyphicon glyphicon-log-out"></span> Log out
         </button>
   </div>
