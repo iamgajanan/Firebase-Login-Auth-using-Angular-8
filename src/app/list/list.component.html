@@ -1,0 +1,33 @@
+
+<div *ngIf="!valuesa">
+    <h2>  Welcome User </h2>
+    <ul *ngFor="let data of datas">
+      
+        
+        <div> Hello!! {{data.name | uppercase}}</div> 
+        <div>Email: {{data.email}} </div> <br> Thanks for login...!!!<br>
+        <button class="del"  (click)="onDelete(data)">Log out</button> &nbsp;
+       
+      
+    </ul>
+  </div>
+  
+  
+  <div *ngIf="afAuth.authState | async as authUser">
+    <h1>
+      Hello!! {{authUser.displayName}}
+    </h1>
+    <img [src]="authUser.photoURL">
+    <h1>
+      Email: {{authUser.email}}
+    </h1>
+     <h1>
+      Thanks for login...!!!
+    </h1>
+  <br>
+        <button href="#" class="btn btn-info btn-lg" (click)='logout()'>
+        <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
+  </div>
+  
+  
